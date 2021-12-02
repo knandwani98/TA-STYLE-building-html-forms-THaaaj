@@ -126,7 +126,8 @@ h1 {
 .btn2 {
     background-color: #37CC8A;
     text-transform: uppercase;
-    box-shadow: 0 2px #37CC8A;
+    letter-spacing: 1px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Main */
@@ -136,7 +137,8 @@ h1 {
     background: url(../media/bg-intro-desktop.png);
     background-color: rgb(255,121,120);
     height: 100vh;
-    padding: 40px 0;
+    display: flex;
+    align-content: center;
 }
 
 /* Form */
