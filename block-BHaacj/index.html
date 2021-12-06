@@ -20,7 +20,7 @@
                     JOURNEY
                 </a>
                 <ul class="menu flex">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="#">Top Destination</a></li>
                     <li><a href="#">Recomended Places</a></li>
                     <li><a href="#">Contact Us</a></li>
@@ -37,7 +37,7 @@
                         <img src="root/media/dots-3.png" alt="Dots">
                         <p>We assist you to choose the best.</p>
                         <a href="#">
-                            <i class="center middle fas fa-angle-down"></i>
+                            <i class="fas fa-angle-down"></i>
                         </a>
                     </div>
                     <form>
@@ -59,16 +59,35 @@
                             <div class="flex50">
                                 <div class="flex">
                                     <div>
-                                        <label for="Rooms">How many rooms?</label>
-                                        <input class="form-control" type="number" name="Rooms" placeholder="Room 1">
+                                        <label for="rooms">How many rooms?</label>
+                                        <select class="form-control" name="Rooms" id="rooms">
+                                            <option value="">Room 1</option>
+                                            <option value="">Room 2</option>
+                                            <option value="">Room 3</option>
+                                            <option value="">Room 4</option>
+                                            <option value="">Room 5</option>
+
+                                        </select>
                                     </div>
                                     <div>
-                                        <label for="Adult">Adult</label>
-                                        <input class="form-control" type="number" name="Adult" min="1">
+                                        <label for="adult">Adult</label>
+                                        <select class="form-control" name="Adults" id="adult">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
                                     </div>
                                     <div>
-                                        <label for="Children">Children</label>
-                                        <input class="form-control" type="number" name="Children" min="0">
+                                        <label for="children">Children</label>
+                                        <select class="form-control" name="Children" id="children">
+                                            <option value="">0</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <input class="btn btn1 full-img" type="submit" value="Check availabilty">
@@ -77,7 +96,6 @@
                     </form>
                 </div>
             </section>
-
             <!-- Explore -->
             <section class="explore flex space60">
                 <article class="center container">
@@ -88,34 +106,76 @@
                 </article>
             </section>
             <!-- Places -->
-            <section class="place">
+            <section class="place font0">
                 <!-- Europe -->
-                <section class="europe flex">
-                    <img class="full-img" src="root/media/tm-img-01.jpg" alt="Europe">
-                    <article class="right">
+                <article class="flex">
+                    <div class="img flex50">
+                        <img class="full-img" src="root/media/tm-img-01.jpg" alt="TM">
+                        <div class="nav-arrow right flex">
+                            <div class="box">
+                                <div class="circle">
+                                    <i class="fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="circle">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article a-right flex50">
                         <h2>Europe's most visited places</h2>
-                        <p class="space10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis reiciendis qui provident, eaque accusamus velit ab, unde perspiciatis a blanditiis perferendis doloribus! Doloribus, quod perferendis culpa nihil quas nobis expedita.</p>
+                        <p class="space10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae tenetur mollitia maxime vero ullam ut ipsum eaque dolores neque, ducimus, ab facilis. Est velit sequi neque voluptatem labore natus, aspernatur, in nemo ducimus, fugit vel laudantium obcaecati veritatis error quis.</p>
                         <a class="btn btn2" href="#">Continue Reading</a>
-                    </article>
-                </section>
+                    </div>    
+                </article>
                 <!-- Asia -->
-                <section class="asia flex">
-                    <article class="left">
+                <article class="flex">
+                    <div class="article a-left flex50">
                         <h2>Asia's most visited places</h2>
-                        <p class="space10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis reiciendis qui provident, eaque accusamus velit ab, unde perspiciatis a blanditiis perferendis doloribus! Doloribus, quod perferendis culpa nihil quas nobis expedita.</p>
+                        <p class="space10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae tenetur mollitia maxime vero ullam ut ipsum eaque dolores neque, ducimus, ab facilis. Est velit sequi neque voluptatem labore natus, aspernatur, in nemo ducimus, fugit vel laudantium obcaecati veritatis error quis.</p>
                         <a class="btn btn3" href="#">Continue Reading</a>
-                    </article>
-                    <img class="full-img" src="root/media/tm-img-02.jpg" alt="Asia">
-                </section>
-                <!-- Europe -->
-                <section class="america flex">
-                    <img class="full-img" src="root/media/tm-img-03.jpg" alt="America">
-                    <article class="right">
+                    </div>    
+                    <div class="img flex50">
+                        <img class="full-img" src="root/media/tm-img-02.jpg" alt="TM">
+                        <div class="nav-arrow left flex">
+                            <div class="box">
+                                <div class="circle">
+                                    <i class="fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="circle">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- America -->
+                <article class="flex">
+                    <div class="img flex50">
+                        <img class="full-img" src="root/media/tm-img-03.jpg" alt="TM">
+                        <div class="nav-arrow right flex">
+                            <div class="box">
+                                <div class="circle">
+                                    <i class="fas fa-angle-left"></i>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="circle">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article a-right flex50">
                         <h2>America's most visited places</h2>
-                        <p class="space10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis reiciendis qui provident, eaque accusamus velit ab, unde perspiciatis a blanditiis perferendis doloribus! Doloribus, quod perferendis culpa nihil quas nobis expedita.</p>
+                        <p class="space10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae tenetur mollitia maxime vero ullam ut ipsum eaque dolores neque, ducimus, ab facilis. Est velit sequi neque voluptatem labore natus, aspernatur, in nemo ducimus, fugit vel laudantium obcaecati veritatis error quis.</p>
                         <a class="btn btn2" href="#">Continue Reading</a>
-                    </article>
-                </section>
+                    </div>    
+                </article>
             </section>
             <!-- Countries -->
             <section class="country flex flex-center">
