@@ -77,6 +77,10 @@ a {
     text-decoration: none;
 }
 
+.font0 {
+    font-size: 0;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -89,6 +93,8 @@ a {
 .middle {
     vertical-align: middle;
 }
+
+
 /* txt */
 
 strong {
@@ -118,12 +124,12 @@ h6 {
     font-weight: 700;
     color: var(--secondary);
 }
-
 p {
     font-size: 12px;
 }
 
 /* flex */
+
 .flex {
     display: flex;
     justify-content: space-between;
@@ -135,9 +141,6 @@ p {
     justify-items: center;
 }
 
-/* .flex15 {
-    flex: 0 1 15%;
-} */
 .flex20 {
     flex: 0 1 20%;
 }
@@ -217,7 +220,7 @@ p {
     color: black;
     font-weight: 800;
 }
-.menu a:hover {
+.menu a.active {
     color: var(--primary);    
 }
 
@@ -244,6 +247,7 @@ p {
     display: inline-block;
     width: 40px;
     height: 40px;
+    line-height: 40px;
     border-radius: 50%;
     font-size: 20px;
     color: white;
@@ -266,32 +270,58 @@ p {
 }
 
 
-/* Countries */
+/* Place */
 
-.place {
+.place .img {
     position: relative;
 }
-.places h2 {
-    text-transform: none;
+
+.place article .article {
+    padding: 40px;
+    color: white;
+    position: relative;
+    z-index: 1;
 }
 
-.place img {
-    width: 50%;
-}
-.place article {
-    padding: 40px 52px;
-    color: white;
-}
-.place .right {
+.place .a-right {
     background-color: var(--primary);
-    margin-left: -44px;
-    margin-right: 44px;    
+    left: -45px;
 }
-.place .left {
+.place .a-left {
     background-color: var(--secondary);
-    margin-left: 44px;
-    margin-right: -44px;
-    z-index: 2;
+    right: -45px;
+}
+.nav-arrow .box {
+    height: 48px;
+    width: 48px;
+    background-color:rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+}
+.nav-arrow .circle {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-arrow .circle i {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+.nav-arrow {
+    position: absolute;
+    top: 45%;
+}
+article .img .right {
+    right: 42px;
+}
+article .img .left {
+    left: 42px;
 }
 
 /* country */
@@ -361,10 +391,11 @@ form fieldset {
     padding: 14px;
     background-color: var(--bg);
     border: 0;
-    color: var(--txt);
+    color: var(--heading);
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 20px;
     width: 100%;
+    outline: 0;
 }
 
 .footer {
