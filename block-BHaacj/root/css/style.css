@@ -1,0 +1,405 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+/* custom */
+
+:root {
+    --primary: #69C6BA;
+    --secondary: #C66995;
+    --heading: #212529;
+    --bg: #efefef;
+    --txt: #9FA5AB;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--heading);
+}
+
+a {
+    text-decoration: none;
+}
+
+.font0 {
+    font-size: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.center {
+    text-align: center;
+}
+.middle {
+    vertical-align: middle;
+}
+
+
+/* txt */
+
+strong {
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+}
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h4 {
+    font-weight: 600;
+}
+h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--secondary);
+}
+p {
+    font-size: 12px;
+}
+
+/* flex */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(255, 0, 0, 0.418); */
+}
+
+.flex-center {
+    justify-items: center;
+}
+
+.flex20 {
+    flex: 0 1 20%;
+}
+.flex25 {
+    flex: 0 1 25%;
+}
+.flex30 {
+    flex: 0 1 30%;
+}
+.flex40 {
+    flex: 0 1 40%;
+}
+.flex48 {
+    flex: 0 1 48.75%;
+}
+.flex50 {
+    flex: 0 1 50%;
+}
+.flex60 {
+    flex: 0 1 60%;
+}
+
+
+
+/* Spaces */
+
+.space10 {
+    padding: 10px 0;
+}
+.space20 {
+    padding: 20px 0;
+}
+.space32 {
+    padding: 32px 0;
+}
+.space60 {
+    padding: 60px 0;
+}
+.space80 {
+    padding: 80px 0;
+}
+
+
+/* Images */
+.full-img {
+    width: 100%;
+}
+
+/* Buttons */
+.btn {
+    font-size: 14px;
+    display: inline-block;
+    margin: 2px 0;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.btn1 {
+    background-color: var(--primary);
+    color: white;
+}
+.btn2 {
+    background-color: white;
+    color: var(--primary);
+}
+.btn3 {
+    background-color: white;
+    color: var(--secondary);
+}
+
+
+/* Header */
+
+.header a{
+    padding: 32px;
+    color: black;
+    font-weight: 800;
+}
+.menu a.active {
+    color: var(--primary);    
+}
+
+.logo {
+    font-size: 32px;
+}
+.logo img {
+    vertical-align: middle;
+}
+
+/* Banner */
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/banner.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.banner p {
+    font-size: 28px;
+    color: #ddd;
+    font-weight: 400;
+}
+.banner a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    background-color: var(--primary);
+}
+.banner fieldset {
+    background-color: var(--bg) !important;
+}
+.banner label {
+    font-size: 14px;
+    font-weight: 800;
+}
+/* Explore */
+
+.explore {
+    background: var(--bg);
+}
+.explore article {
+    width: 65%;
+}
+
+
+/* Place */
+
+.place .img {
+    position: relative;
+}
+
+.place article .article {
+    padding: 40px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.place .a-right {
+    background-color: var(--primary);
+    left: -45px;
+}
+.place .a-left {
+    background-color: var(--secondary);
+    right: -45px;
+}
+.nav-arrow .box {
+    height: 48px;
+    width: 48px;
+    background-color:rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+}
+.nav-arrow .circle {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-arrow .circle i {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+.nav-arrow {
+    position: absolute;
+    top: 45%;
+}
+article .img .right {
+    right: 42px;
+}
+article .img .left {
+    left: 42px;
+}
+
+/* country */
+.country {
+    background-color: var(--primary);
+}
+
+.country figure{
+    background-color: var(--primary);
+    padding: 20px 44px;
+}
+
+.country figcaption {
+    color: white;
+    text-transform: uppercase;
+}
+
+.country .active {
+    background-color: var(--secondary);
+}
+
+/* Pricing */
+
+.princing p {
+    color: var(--txt);
+}
+.pricing .package {
+    border: 1px solid #efefef;
+    font-size: 0;
+    text-align:left;
+}
+
+
+.pricing .curve {
+    background-color: var(--primary);
+    font-size: 0;
+}
+.pricing .curve .amount {
+    text-transform: uppercase;
+    color: white;
+    margin-right: 28px;
+    margin-top: 12px;
+}
+
+.price img {
+    height: 100%;
+}
+.price {
+    background-color: rgba(255, 0, 0, 0.39);
+    font-size: 0;
+}
+
+.map {
+    position: relative;
+}
+.map form {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    bottom: 40px;
+}
+form fieldset {
+    background-color: white;
+    padding: 26px;
+}
+.form-control {
+    padding: 14px;
+    background-color: var(--bg);
+    border: 0;
+    color: var(--heading);
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: 0;
+}
+
+.footer {
+    background-color: var(--primary);
+    color: white;
+}
+
